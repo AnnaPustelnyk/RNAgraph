@@ -2,16 +2,31 @@ import dash
 from dash import dcc, html, callback, Output, Input, State
 import base64
 
-# Register the page
+rna_nucleotides = ['A', 'C', 'G', 'U', 'I']
+dna_nucleotides = ['DA', 'DC', 'DG', 'DU', 'DI', 'DT']
+def check_nucleotide_type(decoded_data):
+    pdb_content = decoded_data.decode('utf-8')
+    
+    for line in pdb_content.splitlines():
+        if line.startswith('ATOM') or line.startswith('HETATM'):
+            residue_name = line[17:20].strip()  
+            if residue_name in rna_nucleotides:
+                return "RNA"
+            elif residue_name in dna_nucleotides:
+                return "DNA"
+    return "Other"
+
+
 dash.register_page(__name__, path='/', name="Mol* Viewer")
 
 # Layout of the page
 layout = html.Div(
     [
-        html.H1("Welcome to RNA Graph application", className='h1', style={'textAlign': 'center'}),
+        html.H1("Welcome to RNA Graph application", className='h1', style={'text-align': 'center'}),
         html.Div(id='molstar-viewer-container'),
         html.Div(id='upload-message', style={'color': 'red'}),
-    ]
+    ],
+    style={'display': 'flex','justifyContent': 'center', 'alignItems': 'center', 'flex-direction' : 'column', 'height': '610px'}
 )
 
 @callback(
@@ -22,19 +37,23 @@ layout = html.Div(
 )
 def update_molstar_view(contents, filename):
     if contents is None or filename is None:
-        return dash.no_update, dash.no_update
+        return None, dash.no_update
 
     content_type, content_string = contents.split(',')
     decoded = base64.b64decode(content_string)
     file_ext = filename.split('.')[-1].lower()
 
     if file_ext not in ['pdb', 'cif']:
-        return dash.no_update, "Error: Unsupported file format. Please upload a PDB or CIF file."
+        return None, "Error: Unsupported file format. Please upload a PDB or CIF file."
     
+    structure_type = check_nucleotide_type(decoded)
+    if structure_type == "Other":
+        return None, "Error: The file does not contain a DNA or RNA structure."
+
     file_base64 = base64.b64encode(decoded).decode()
     file_data_url = f"data:{content_type};base64,{file_base64}"
 
-    return {'url': file_data_url, 'ext': file_ext}, dash.no_update
+    return {'url': file_data_url, 'ext': file_ext}, ""
 
 dash.clientside_callback(
     """

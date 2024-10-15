@@ -2,54 +2,159 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: #fafafb;
 }
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
     padding-left: 12px;
     padding-right: 12px;
-    background-color: #f8f9fa; /* Change background color if needed */
+    background-color: #1e3d5c; 
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: #00000020 0px 1px 4px;
+    margin: 0px;
+    color: #fafafb;
 }
-.content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+.title{
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 12px;
 }
-.nav-link.active {
-    color: #fefefe!important;
-    background-color: #007bff; 
-    border-radius: 12px;
+.upload-data{
+    line-height: 16px;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 8px;
+    text-align: center; 
+    margin-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .nav-link {
-    color: #000000;
-    margin: 6px;
+    color: #fafafb;
+    padding-top : 4px; 
+    padding-bottom : 4px;
+    margin: 4px;
+    border-radius: 12px;
+}
+.nav-link.active {
+    color: #1e3d5c!important;
+    background-color: #fafafb; 
+    padding-top : 4px; 
+    padding-bottom : 4px;
+    margin: 4px;
+    border-radius: 12px;
+    font-weight: bolder;
+}
+.nav-link:hover {
+    color: #9397a2;
+    padding-top : 4px; 
+    padding-bottom : 4px;
+    margin: 4px;
+    border-radius: 12px;
+}
+.nav-link.active:hover {
+    color: #fafafb!important;
+    background-color: #1e3d5c; 
+    padding-top : 4px; 
+    padding-bottom : 4px;
+    margin: 3px;
+    border-radius: 12px;
+    font-weight: bolder;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fafafb;
 }
 .h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 24px;
 }
-.graph{
-    margin-left: 0;
-    width: 100%;
-    align-items: left;
-}
 .clear-button{
-    color: #000000;
-    text-align: center;
-    background: #92bfef;
-    border-color: #92bfef;
-    border-radius: 12px;
+    color: #fafafb!important;
+    background-color: #1e3d5c;
+    width: 216px; 
+    padding-top : 4px; 
+    padding-bottom : 4px;
     margin-top: 16px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 8px;
+    font-weight: bolder;
+    border-width: 0px;
 }
 .clear-button:hover {
-    background-color: #6392c3; 
-    border-color: #6392c3;
+    color: #fafafb!important;
+    background-color: #102337;
+}
+.sel-nucleotide-info{
+    background-color: #fafafb;
+    width : 240px;
+    height: 610px;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    padding-top: 12px;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dadadd;
+    color: #121213;
+}
+.label-info{
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: medium;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 1px;
+    border-color: #dadadd;
+}
+.rna-graph-container{
+    display: flex;
+    justify-content: center;
+    flex-direction : column; 
+    align-items: center;
+    height: 610px;
+    padding-right: 24px;
+}
+.side-bar{
+    background-color: #fafafb;
+    width : 280px;
+    height: 610px;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    padding-top: 12px;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dadadd;
+    color: #121213;
+}
+.checklist-label{
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: medium;
+    padding-left: 12px;
+}
+.checklist-input{
+    margin-right: 12px;
+    margin-bottom: 16px;
 }

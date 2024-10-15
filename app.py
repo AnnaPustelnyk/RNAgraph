@@ -1,3 +1,4 @@
+import base64
 import dash
 from dash import dcc, html
 import dash_bootstrap_components as dbc
@@ -12,29 +13,23 @@ app.layout = html.Div(
                 html.H1("RNA Graph", style={'textAlign': 'left'}),
                 dcc.Upload(
                     id='upload-data',
+                    className = 'upload-data',
                     children=html.Div(['Drag and Drop or ', html.A('Select a PDB or CIF File')]),
-                    style={
-                        'height': '40px', 
-                        'lineHeight': '24px',
-                        'borderWidth': '1px', 
-                        'borderStyle': 'dashed',
-                        'borderRadius': '5px', 
-                        'textAlign': 'center', 
-                        'margin': '16px',
-                        'padding': '10px'
-                    },
-                    multiple=False
+                    multiple=False,
+                    style = {'font-size': '16px'}
                 ),
                 dcc.Store(id="store"),
                 dbc.NavbarSimple(
                     children=[
-                        dbc.NavItem(dcc.Link(page['name'], href=page['path'], id=f"{page['name'].lower()}-link", className="nav-link"))
+                        dbc.NavItem(
+                            dcc.Link(page['name'], href=page['path'], id=f"{page['name'].lower()}-link", className="nav-link"),  
+                        )
                         for page in dash.page_registry.values()
                     ],
-                    className="navbar-right"
-                ),
+                    color = '#1e3d5c',
+                )
             ],
-            className="header",
+            className="header", 
         ),
         html.Div(dash.page_container, className="content"),
         html.Div(id='upload-message', style={'color': 'red'}),
@@ -50,9 +45,8 @@ def update_active_link(contents, pathname):
     molviewer_class = 'nav-link'
     RNAgraph_class = 'nav-link'
 
-    if contents:
-        if pathname == '/':
-            molviewer_class = 'nav-link active'
+    if pathname == '/':
+        molviewer_class = 'nav-link active'
 
     if pathname == '/page-2':
         RNAgraph_class = 'nav-link active'
@@ -60,4 +54,4 @@ def update_active_link(contents, pathname):
     return molviewer_class, RNAgraph_class
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run_server(debug=True)
