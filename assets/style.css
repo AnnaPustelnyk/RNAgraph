@@ -10,7 +10,9 @@
     justify-content: space-between;
     padding-left: 12px;
     padding-right: 12px;
-    background-color: #1e3d5c; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #021425; 
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     box-shadow: #00000020 0px 1px 4px;
@@ -35,6 +37,12 @@
     padding-top: 8px;
     padding-bottom: 8px;
 }
+.upload-message{
+    color: rgb(204, 23, 23);
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
 .nav-link {
     color: #fafafb;
     padding-top : 4px; 
@@ -43,7 +51,7 @@
     border-radius: 12px;
 }
 .nav-link.active {
-    color: #1e3d5c!important;
+    color: #021425!important;
     background-color: #fafafb; 
     padding-top : 4px; 
     padding-bottom : 4px;
@@ -60,7 +68,7 @@
 }
 .nav-link.active:hover {
     color: #fafafb!important;
-    background-color: #1e3d5c; 
+    background-color: #021425; 
     padding-top : 4px; 
     padding-bottom : 4px;
     margin: 3px;
@@ -74,87 +82,200 @@
 .h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 24px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .clear-button{
     color: #fafafb!important;
-    background-color: #1e3d5c;
+    background-color: #021425;
     width: 216px; 
-    padding-top : 4px; 
-    padding-bottom : 4px;
+    padding-top : 6px; 
+    padding-bottom : 6px;
     margin-top: 16px;
     margin-left: 12px;
     margin-right: 12px;
-    border-radius: 8px;
-    font-weight: bolder;
+    border-radius: 12px;
+    font-family: 'roboto', sans-serif;
+    font-weight: medium;
     border-width: 0px;
 }
 .clear-button:hover {
     color: #fafafb!important;
     background-color: #102337;
 }
-.sel-nucleotide-info{
-    background-color: #fafafb;
-    width : 240px;
-    height: 610px;
-    margin-top: 12px;
-    margin-left: 12px;
-    margin-bottom: 12px;
-    padding-top: 12px;
-    border-radius: 16px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #dadadd;
-    color: #121213;
-}
 .label-info{
     font-family: 'roboto', sans-serif;
     font-size: 16px;
-    font-weight: medium;
+    font-weight: lighter;
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding-left: 12px;
     padding-right: 12px;
-    padding-top: 8px;
+    padding-top: 6px;
     padding-bottom: 4px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
     border-style: solid;
     border-top-width: 0px;
     border-right-width: 0px;
     border-left-width: 0px;
     border-bottom-width: 1px;
-    border-color: #dadadd;
+    border-color: #a6a6a6;
+    color: #1f1f20;
 }
-.rna-graph-container{
+.contant {
     display: flex;
-    justify-content: center;
-    flex-direction : column; 
-    align-items: center;
-    height: 610px;
-    padding-right: 24px;
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-behavior: auto;
 }
-.side-bar{
-    background-color: #fafafb;
-    width : 280px;
-    height: 610px;
+.sel-nucleotide-info{
+    display: 'none'; 
+    position: relative;
+    background-color: #f1f1f3;
+    min-width : 240px;
+    min-height: 600px;
     margin-top: 12px;
-    margin-right: 12px;
+    margin-left: 12px;
     margin-bottom: 12px;
-    padding-top: 12px;
     border-radius: 16px;
     border-style: solid;
     border-width: 1px;
-    border-color: #dadadd;
+    border-color: #a6a6a6;
     color: #121213;
+}
+.sel-nucleotide-info .top-section{
+    background-color: #fafafb;
+    padding-top: 12px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.rna-graph-container{
+    display : none;
+    position: relative;
+    height: 100%;
+    width: 1000px;
+    min-width: 700px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+.side-bar{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between; 
+    background-color: #f1f1f3;
+    min-width : 280px;
+    min-height: 600px;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a6a6a6;
+    color: #121213;
+}
+.side-bar .top-section{
+    padding-top: 12px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: #fafafb;
+}
+.side-bar .bottom-section{
+    position: absolute;
+    bottom: 0;
+    background-color: #fafafb;
+    border-radius: 16px;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-color: #a6a6a6;
 }
 .checklist-label{
     font-family: 'roboto', sans-serif;
     font-size: 16px;
     font-weight: medium;
     padding-left: 12px;
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 1px;
+    border-color: #a6a6a6;
 }
 .checklist-input{
     margin-right: 12px;
     margin-bottom: 16px;
+}
+.checklist2-input{
+    margin-top: 16px;
+    margin-right: 12px;
+    margin-bottom: 16px;
+}
+.interaction-description{
+    display: flex;
+    gap: 12px;
+    flex-direction: row; 
+    align-items: center; 
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    font-size: smaller;
+    color: #1f1f20;
+}
+.color-picker-container{
+    flex-direction: column;
+    align-items: center;
+}
+.interaction-container{
+    display : none;
+    width: 280px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-top: 4px;
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 1px;
+    border-radius: 16px;
+    border-color: #a6a6a6;
+}
+.interaction-dropdown-container{
+    display: flex; 
+    justify-content: space-between; 
+    gap: 8px;
+    flex-direction: row; 
+    align-items: center;
+}
+.dropUp .Select-control{
+    width: 124px; 
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    border-radius: 12px;
+    border-color: #e8e8eb;
+    background-color: #f1f1f3;
+    color: #1f1f20;
+}
+.dropUp .Select-menu-outer {
+    top: 0;
+     -webkit-transform: translateY(3px) translateY(-100%);
+     transform: translateY(3px) translateY(-100%);
+     border-top-right-radius: 4px;
+     border-top-left-radius: 4px;
+     border-bottom-right-radius: 0px;
+     border-bottom-left-radius: 0px;
+     border: 1px solid #ccc;
+     border-bottom: none;
+     width: 124px;
 }

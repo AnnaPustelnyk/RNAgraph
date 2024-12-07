@@ -1,0 +1,8 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "py-mmcif\\out\\build\\x64-Debug",
+      "py-mmcif\\out\\install\\x64-Debug"
+    ]
+  }
+}

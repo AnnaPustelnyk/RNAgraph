@@ -22,14 +22,12 @@ dash.register_page(__name__, path='/', name="Mol* Viewer")
 # Layout of the page
 layout = html.Div(
     [
-        html.H1("Welcome to RNA Graph application", className='h1', style={'text-align': 'center'}),
         html.Div(id='molstar-viewer-container'),
-        html.Div(id='upload-message', style={'color': 'red'}),
     ],
-    style={'display': 'flex','justifyContent': 'center', 'alignItems': 'center', 'flex-direction' : 'column', 'height': '610px'}
+    style={'display': 'flex','justifyContent': 'center', 'alignItems': 'center', 'flexDirection' : 'column', 'height': '610px'}
 )
 
-@callback(
+'''@callback(
     Output('store', 'data'),
     Output('upload-message', 'children'),
     Input('upload-data', 'contents'),
@@ -54,7 +52,7 @@ def update_molstar_view(contents, filename):
     file_data_url = f"data:{content_type};base64,{file_base64}"
 
     return {'url': file_data_url, 'ext': file_ext}, ""
-
+'''
 dash.clientside_callback(
     """
     function(data) {
