@@ -284,5 +284,5 @@ def calculate_interactions(decoded_data, ext):
 
 if __name__ == "__main__":
     #app.run_server(debug=True, dev_tools_ui=False)
-    app.run_server(debug=True)
+    app.run_server(debug=True, host="0.0.0.0", port=8050)
     #serve(app.server, host="0.0.0.0", port=8050)
