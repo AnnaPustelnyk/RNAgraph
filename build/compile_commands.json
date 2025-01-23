@@ -1,0 +1,272 @@
+[
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-file.dir\\modules\\cpp-cif-file\\src\\CifFile.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-file\\src\\CifFile.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-file/src/CifFile.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-file.dir\\modules\\cpp-cif-file\\src\\DicFile.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-file\\src\\DicFile.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-file/src/DicFile.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-file.dir\\modules\\cpp-cif-file\\src\\ParentChild.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-file\\src\\ParentChild.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-file/src/ParentChild.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-file.dir\\modules\\cpp-cif-file\\src\\CifParentChild.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-file\\src\\CifParentChild.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-file/src/CifParentChild.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-file.dir\\modules\\cpp-cif-file\\src\\CifDataInfo.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-file\\src\\CifDataInfo.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-file/src/CifDataInfo.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-file.dir\\modules\\cpp-cif-file\\src\\CifExcept.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-file\\src\\CifExcept.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-file/src/CifExcept.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-file-util.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-file-util.dir\\modules\\cpp-cif-file-util\\src\\CifFileUtil.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-file-util\\src\\CifFileUtil.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-file-util/src/CifFileUtil.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-file-util.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-file-util.dir\\modules\\cpp-cif-file-util\\src\\CifCorrector.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-file-util\\src\\CifCorrector.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-file-util/src/CifCorrector.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-parser.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-parser.dir\\modules\\cpp-cif-parser\\src\\CifFileReadDef.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-parser\\src\\CifFileReadDef.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-parser/src/CifFileReadDef.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   @CMakeFiles/cif-parser.dir/includes_C.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fPIC -g   -o CMakeFiles\\cif-parser.dir\\src\\CifParser.c.obj   -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\build\\src\\CifParser.c",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/build/src/CifParser.c"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   @CMakeFiles/cif-parser.dir/includes_C.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fPIC -g   -o CMakeFiles\\cif-parser.dir\\src\\CifScanner.c.obj   -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\build\\src\\CifScanner.c",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/build/src/CifScanner.c"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-parser.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-parser.dir\\modules\\cpp-cif-parser\\src\\CifScannerBase.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-parser\\src\\CifScannerBase.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-parser/src/CifScannerBase.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-parser.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-parser.dir\\modules\\cpp-cif-parser\\src\\CifParserBase.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-parser\\src\\CifParserBase.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-parser/src/CifParserBase.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   @CMakeFiles/cif-parser.dir/includes_C.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fPIC -g   -o CMakeFiles\\cif-parser.dir\\src\\DICScanner.c.obj   -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\build\\src\\DICScanner.c",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/build/src/DICScanner.c"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-parser.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-parser.dir\\modules\\cpp-cif-parser\\src\\DICScannerBase.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-parser\\src\\DICScannerBase.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-parser/src/DICScannerBase.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   @CMakeFiles/cif-parser.dir/includes_C.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fPIC -g   -o CMakeFiles\\cif-parser.dir\\src\\DICParser.c.obj   -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\build\\src\\DICParser.c",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/build/src/DICParser.c"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/cif-parser.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\cif-parser.dir\\modules\\cpp-cif-parser\\src\\DICParserBase.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-cif-parser\\src\\DICParserBase.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-cif-parser/src/DICParserBase.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/common.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\common.dir\\modules\\cpp-common\\src\\RcsbPlatform.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-common\\src\\RcsbPlatform.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-common/src/RcsbPlatform.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/common.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\common.dir\\modules\\cpp-common\\src\\RcsbFile.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-common\\src\\RcsbFile.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-common/src/RcsbFile.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/common.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\common.dir\\modules\\cpp-common\\src\\BlockIO.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-common\\src\\BlockIO.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-common/src/BlockIO.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/common.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\common.dir\\modules\\cpp-common\\src\\CifString.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-common\\src\\CifString.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-common/src/CifString.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/common.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\common.dir\\modules\\cpp-common\\src\\Serializer.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-common\\src\\Serializer.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-common/src/Serializer.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/common.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\common.dir\\modules\\cpp-common\\src\\GenString.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-common\\src\\GenString.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-common/src/GenString.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/common.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\common.dir\\modules\\cpp-common\\src\\GenCont.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-common\\src\\GenCont.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-common/src/GenCont.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/common.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\common.dir\\modules\\cpp-common\\src\\Exceptions.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-common\\src\\Exceptions.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-common/src/Exceptions.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/common.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\common.dir\\modules\\cpp-common\\src\\DataInfo.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-common\\src\\DataInfo.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-common/src/DataInfo.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/common.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\common.dir\\modules\\cpp-common\\src\\mapped_vector.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-common\\src\\mapped_vector.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-common/src/mapped_vector.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/common.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\common.dir\\modules\\cpp-common\\src\\mapped_ptr_vector.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-common\\src\\mapped_ptr_vector.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-common/src/mapped_ptr_vector.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/dict-obj-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\dict-obj-file.dir\\modules\\cpp-dict-obj-file\\src\\DictObjFileCreator.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-dict-obj-file\\src\\DictObjFileCreator.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-dict-obj-file/src/DictObjFileCreator.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/dict-obj-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\dict-obj-file.dir\\modules\\cpp-dict-obj-file\\src\\DictObjFileReader.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-dict-obj-file\\src\\DictObjFileReader.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-dict-obj-file/src/DictObjFileReader.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/dict-obj-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\dict-obj-file.dir\\modules\\cpp-dict-obj-file\\src\\DictObjContInfo.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-dict-obj-file\\src\\DictObjContInfo.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-dict-obj-file/src/DictObjContInfo.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/dict-obj-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\dict-obj-file.dir\\modules\\cpp-dict-obj-file\\src\\DictObjCont.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-dict-obj-file\\src\\DictObjCont.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-dict-obj-file/src/DictObjCont.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/dict-obj-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\dict-obj-file.dir\\modules\\cpp-dict-obj-file\\src\\DictObjFile.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-dict-obj-file\\src\\DictObjFile.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-dict-obj-file/src/DictObjFile.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/dict-obj-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\dict-obj-file.dir\\modules\\cpp-dict-obj-file\\src\\DictDataInfo.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-dict-obj-file\\src\\DictDataInfo.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-dict-obj-file/src/DictDataInfo.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/dict-obj-file.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\dict-obj-file.dir\\modules\\cpp-dict-obj-file\\src\\DictParentChild.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-dict-obj-file\\src\\DictParentChild.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-dict-obj-file/src/DictParentChild.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/mmcif_reader_test_1.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\mmcif_reader_test_1.dir\\modules\\cpp-mmciflib-test\\src\\CifReader.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-mmciflib-test\\src\\CifReader.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-mmciflib-test/src/CifReader.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -Dmmciflib_EXPORTS @CMakeFiles/mmciflib.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g -fvisibility=hidden   -std=gnu++11 -o CMakeFiles\\mmciflib.dir\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapCifDataInfo.cpp.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapCifDataInfo.cpp",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-core-mmciflib-wrapper-gen/src/wrapCifDataInfo.cpp"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -Dmmciflib_EXPORTS @CMakeFiles/mmciflib.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g -fvisibility=hidden   -std=gnu++11 -o CMakeFiles\\mmciflib.dir\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapCifFile.cpp.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapCifFile.cpp",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-core-mmciflib-wrapper-gen/src/wrapCifFile.cpp"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -Dmmciflib_EXPORTS @CMakeFiles/mmciflib.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g -fvisibility=hidden   -std=gnu++11 -o CMakeFiles\\mmciflib.dir\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapCifFileReadDef.cpp.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapCifFileReadDef.cpp",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-core-mmciflib-wrapper-gen/src/wrapCifFileReadDef.cpp"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -Dmmciflib_EXPORTS @CMakeFiles/mmciflib.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g -fvisibility=hidden   -std=gnu++11 -o CMakeFiles\\mmciflib.dir\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapCifFileUtil.cpp.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapCifFileUtil.cpp",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-core-mmciflib-wrapper-gen/src/wrapCifFileUtil.cpp"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -Dmmciflib_EXPORTS @CMakeFiles/mmciflib.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g -fvisibility=hidden   -std=gnu++11 -o CMakeFiles\\mmciflib.dir\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapDicFile.cpp.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapDicFile.cpp",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-core-mmciflib-wrapper-gen/src/wrapDicFile.cpp"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -Dmmciflib_EXPORTS @CMakeFiles/mmciflib.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g -fvisibility=hidden   -std=gnu++11 -o CMakeFiles\\mmciflib.dir\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapDictDataInfo.cpp.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapDictDataInfo.cpp",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-core-mmciflib-wrapper-gen/src/wrapDictDataInfo.cpp"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -Dmmciflib_EXPORTS @CMakeFiles/mmciflib.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g -fvisibility=hidden   -std=gnu++11 -o CMakeFiles\\mmciflib.dir\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapISTable.cpp.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapISTable.cpp",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-core-mmciflib-wrapper-gen/src/wrapISTable.cpp"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -Dmmciflib_EXPORTS @CMakeFiles/mmciflib.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g -fvisibility=hidden   -std=gnu++11 -o CMakeFiles\\mmciflib.dir\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapmmciflib.cpp.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapmmciflib.cpp",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-core-mmciflib-wrapper-gen/src/wrapmmciflib.cpp"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -Dmmciflib_EXPORTS @CMakeFiles/mmciflib.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g -fvisibility=hidden   -std=gnu++11 -o CMakeFiles\\mmciflib.dir\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wraprcsb_types.cpp.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wraprcsb_types.cpp",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-core-mmciflib-wrapper-gen/src/wraprcsb_types.cpp"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -Dmmciflib_EXPORTS @CMakeFiles/mmciflib.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g -fvisibility=hidden   -std=gnu++11 -o CMakeFiles\\mmciflib.dir\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapTableFile.cpp.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-core-mmciflib-wrapper-gen\\src\\wrapTableFile.cpp",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-core-mmciflib-wrapper-gen/src/wrapTableFile.cpp"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   @CMakeFiles/regex.dir/includes_C.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fPIC -g   -o CMakeFiles\\regex.dir\\modules\\cc-regex\\src\\regcomp.c.obj   -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cc-regex\\src\\regcomp.c",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cc-regex/src/regcomp.c"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   @CMakeFiles/regex.dir/includes_C.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fPIC -g   -o CMakeFiles\\regex.dir\\modules\\cc-regex\\src\\regexec.c.obj   -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cc-regex\\src\\regexec.c",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cc-regex/src/regexec.c"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   @CMakeFiles/regex.dir/includes_C.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fPIC -g   -o CMakeFiles\\regex.dir\\modules\\cc-regex\\src\\regerror.c.obj   -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cc-regex\\src\\regerror.c",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cc-regex/src/regerror.c"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   @CMakeFiles/regex.dir/includes_C.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fPIC -g   -o CMakeFiles\\regex.dir\\modules\\cc-regex\\src\\regfree.c.obj   -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cc-regex\\src\\regfree.c",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cc-regex/src/regfree.c"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/tables.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\tables.dir\\modules\\cpp-tables\\src\\ISTable.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-tables\\src\\ISTable.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-tables/src/ISTable.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/tables.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\tables.dir\\modules\\cpp-tables\\src\\ITTable.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-tables\\src\\ITTable.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-tables/src/ITTable.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/tables.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\tables.dir\\modules\\cpp-tables\\src\\TTable.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-tables\\src\\TTable.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-tables/src/TTable.C"
+},
+{
+  "directory": "C:/Users/anna/Desktop/rnaGraph2.0/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe    @CMakeFiles/tables.dir/includes_CXX.rsp  -Wall -Wno-unused-variable -Wno-unused-value -Wno-unused-but-set-variable -Wno-deprecated-declarations  -DBIG_ENDIAN_PLATFORM  -DHAVE_STRCASECMP -DINCL_TEMPLATE_SRC -DHAVE_PLACEMENT_NEW    -fno-common -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11  -flto  -g   -o CMakeFiles\\tables.dir\\modules\\cpp-tables\\src\\TableFile.C.obj -c C:\\Users\\anna\\Desktop\\rnaGraph2.0\\libs\\mmcif-0.90.0\\modules\\cpp-tables\\src\\TableFile.C",
+  "file": "C:/Users/anna/Desktop/rnaGraph2.0/libs/mmcif-0.90.0/modules/cpp-tables/src/TableFile.C"
+}
+]

@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Asul&family=Concert+One&family=Eczar&family=Fruktur&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kavoon&family=Neuton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono&family=Tillana&family=Work+Sans&display=swap');
 .app-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #fafafb;
+    background-image: url("/assets/3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .header {
     display: flex;
@@ -20,7 +25,7 @@
     color: #fafafb;
 }
 .title{
-    font-family: 'roboto', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 16px;
     font-weight: bold;
     padding-left: 12px;
@@ -36,10 +41,11 @@
     padding-right: 12px;
     padding-top: 8px;
     padding-bottom: 8px;
+    color: #fafafb
 }
 .upload-message{
-    color: rgb(204, 23, 23);
-    font-family: 'roboto', sans-serif;
+    color: rgb(255, 94, 94);
+    font-family: 'poppins', sans-serif;
     font-size: 12px;
     text-align: center;
 }
@@ -49,6 +55,7 @@
     padding-bottom : 4px;
     margin: 4px;
     border-radius: 12px;
+    font-family: 'Poppins';
 }
 .nav-link.active {
     color: #021425!important;
@@ -57,6 +64,7 @@
     padding-bottom : 4px;
     margin: 4px;
     border-radius: 12px;
+    font-family: 'Poppins';
     font-weight: bolder;
 }
 .nav-link:hover {
@@ -65,6 +73,7 @@
     padding-bottom : 4px;
     margin: 4px;
     border-radius: 12px;
+    font-family: 'Poppins';
 }
 .nav-link.active:hover {
     color: #fafafb!important;
@@ -74,20 +83,105 @@
     margin: 3px;
     border-radius: 12px;
     font-weight: bolder;
+    font-family: 'Poppins';
     border-radius: 12px;
     border-width: 1px;
     border-style: solid;
     border-color: #fafafb;
 }
 .h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 24px;
+    font-size: 36px;
+    color: #fafafb;
+}
+.p1{
+    font-size: 16px;
+    font-weight: 200;
+    color: #eeeef0;
+    padding-top: 8px;
+}
+.p2{
+    font-size: 16px;
+    font-weight: 200;
+    color: #fafafb;
+    padding-top: 16px;
+}
+.step-title{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #fafafb;
+    opacity: 1;
+}
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     position: fixed;
-    top: 50%;
+    width: 100%;
+    height: 100vh;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-left: 48px;
+    padding-right: 48px;
+    font-family: 'Poppins', sans-serif;
+    color: #fafafb;
+    box-sizing: border-box;
+    z-index: 1;
+    overflow: auto;
 }
+.steps-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 48px;
+}
+.step-box{
+    position: relative;
+    width: 360px;
+    backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    border-color: #2d2d4c;
+    border-style: solid;
+    border-width: 0.01rem;
+    padding: 16px;
+}
+.step-box::after{
+    content: '';
+    position: absolute;
+    background-image: url("/assets/noise.jpg");
+    background-size: cover;
+    opacity: 0.03;
+    z-index: -1;
+    inset: 0;
+}
+
+@media (max-width: 1224px) {
+    .title-container {
+        height: auto;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media (min-width: 1225px) {
+    .title-container {
+        height: 100vh;
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 .clear-button{
     color: #fafafb!important;
     background-color: #021425;
@@ -126,7 +220,7 @@
     color: #1f1f20;
 }
 .contant {
-    display: flex;
+    display: none;
     position: relative;
     align-items: flex-start;
     justify-content: space-between;
@@ -134,9 +228,10 @@
     width: 100%;
     overflow: auto;
     scroll-behavior: auto;
+    background-color: #fafafb;
 }
 .sel-nucleotide-info{
-    display: 'none'; 
+    display: block; 
     position: relative;
     background-color: #f1f1f3;
     min-width : 240px;
@@ -235,6 +330,20 @@
 .color-picker-container{
     flex-direction: column;
     align-items: center;
+}
+.structure-name{
+    position: absolute;
+    left: 16px;
+    top: 16px; 
+    align-items: center;
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: #dadadd;
+    background-color: #fafafb;
+    color: #1f1f20;
 }
 .interaction-container{
     display : none;

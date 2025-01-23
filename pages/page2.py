@@ -1,4 +1,3 @@
-#kolory dla wiazan, mozliwosc wyswietlenia heteroatomow, ikona wizualizacji, testy, optymalizacja
 import dash
 from dash import dcc, html, callback, Output, Input, State, Patch
 import base64
@@ -11,6 +10,7 @@ from io import BytesIO, StringIO
 from dash.exceptions import PreventUpdate
 import dash_bootstrap_components as dbc
 import dash_daq as daq
+import os
 
 rna_nucleotides = ['A', 'C', 'G', 'U', 'I']
 dna_nucleotides = ['DA', 'DC', 'DG', 'DU', 'DI', 'DT']
@@ -30,19 +30,10 @@ color_map = {
         'DT': 'rgb(128, 0, 128)'
     }
 
-def check_nucleotide_type(decoded_data):
-    pdb_content = decoded_data.decode('utf-8')
-    
-    for line in pdb_content.splitlines():
-        if line.startswith('ATOM') or line.startswith('HETATM'):
-            residue_name = line[17:20].strip()  
-            if residue_name in rna_nucleotides:
-                return "RNA"
-            elif residue_name in dna_nucleotides:
-                return "DNA"
-    return "Other"
-
-dash.register_page(__name__, path='/page-2', name="RNA Graph")
+try:
+    dash.register_page(__name__, path='/page-2', name="RNA Graph")
+except dash.exceptions.PageError:
+    pass
 
 layout = html.Div( 
     [
@@ -151,6 +142,11 @@ layout = html.Div(
                     ],
                     id = 'color-picker-container',
                     className = 'color-picker-container',
+                    style = {'display': 'none'}
+                ),
+                html.Div(
+                    id = 'structure-name',
+                    className = 'structure-name',
                     style = {'display': 'none'}
                 )  
             ],
@@ -396,6 +392,7 @@ layout = html.Div(
             ]
         )   
     ],
+    id='contant',
     className='contant'
 )
 
@@ -403,8 +400,9 @@ layout = html.Div(
 @callback(
     Output('rna-graph', 'figure', allow_duplicate=True),
     Output('rna-graph-container', 'style'),
-    Output('side-bar', 'style'),
-    Output('sel-nucleotide-info', 'style', allow_duplicate=True),
+    Output('structure-name', 'children'),
+    Output('structure-name', 'style'),
+    Output('contant', 'style'),
     Output('heteroatoms-show', 'options'),
     Input('store', 'data'),
     State('upload-data', 'filename'),
@@ -412,8 +410,8 @@ layout = html.Div(
 )
 def update_rna_graph(data, filename):
     if data is None or filename is None:
-        return go.Figure(), {'display' : 'none'}, {'display' : 'none'}, {'display' : 'none'}, dash.no_update
-
+        return go.Figure(), None, None, {'display' : 'none'}, {'display' : 'none'}, dash.no_update
+    
     colors.clear()
     option = [{'label': 'Show heteroatoms', 'value': 'heteroatoms', 'disabled': False}]
 
@@ -471,8 +469,10 @@ def update_rna_graph(data, filename):
                         "Nucleotide_id" : residue.id[1]
                     })
         break
-
     points_array = np.array(points)
+    if points_array.size == 0:
+        return go.Figure(), dash.no_update, {'display': 'none'}, {'display' : 'none'}, {'display': 'none'}, dash.no_update
+    
     if len(heteroatoms) > 0:
         heteroatoms_array = np.array(heteroatoms)
     else: 
@@ -486,7 +486,7 @@ def update_rna_graph(data, filename):
         z=points_array[:, 2],  
         mode='markers',
         marker=dict(
-            size=6,
+            size=8,
             color=colors,
             opacity=1.0,
             line=dict(
@@ -543,7 +543,8 @@ def update_rna_graph(data, filename):
         showlegend=False
     )
 
-    return fig, {'display' : 'block'}, {'display' : 'block'}, {'display' : 'block'}, option
+    structure_name = data.get('name')
+    return fig, {'display' : 'block'}, structure_name, {'display' : 'block'}, {'display' : 'flex'}, option
 
 @callback(
     [
@@ -571,11 +572,12 @@ def display_selected_info(clickData, current_figure, relayoutData):
                     for point, c in zip(fig.data[0].customdata, colors)
             ]
             fig.data[0].marker.color = updated_colors
-            fig.data[1].marker.color = ['black' if point in [pt['customdata'] for pt in clickData['points']] else f'rgba(0, 0, 0, 0.6)' for point in fig.data[1].customdata]
-
             fig.data[0].marker.size = [16 if p in [point['customdata'] for point in clickData['points']] else 12 for p in fig.data[0].customdata]
-            fig.data[1].marker.size = [16 if p in [point['customdata'] for point in clickData['points']] else 12 for p in fig.data[1].customdata]
 
+            if len(fig.data) > 1 and fig.data[1].name == 'heteroatoms':
+                fig.data[1].marker.color = ['black' if point in [pt['customdata'] for pt in clickData['points']] else f'rgba(0, 0, 0, 0.6)' for point in fig.data[1].customdata]
+                fig.data[1].marker.size = [16 if p in [point['customdata'] for point in clickData['points']] else 12 for p in fig.data[1].customdata]
+            
             if relayoutData and 'scene.camera' in relayoutData:
                 fig.update_layout(scene_camera=relayoutData['scene.camera'])
             return nucleotide_value, chain_value, fig        
@@ -778,17 +780,27 @@ def create_interaction_lines(interaction_list, nucleotide_info = None, heteroato
             nt1 = pair['nt1']
             nt2 = pair['nt2']
 
-            if nt1['auth']['name'] not in rna_nucleotides and nt1['auth']['name'] not in dna_nucleotides:
-                if heteroatom_info is not None:
-                    nt1_info = next(nucleotide for nucleotide in heteroatom_info if nucleotide[4] == nt1['auth']['number'] and nucleotide[1] == nt1['auth']['chain'] and nucleotide[0] == nt1['auth']['name'])
-            else:
-                nt1_info = next(nucleotide for nucleotide in nucleotide_info if nucleotide[4] == nt1['auth']['number'] and nucleotide[1] == nt1['auth']['chain'] and nucleotide[0] == nt1['auth']['name'])
+            try:
+                if nt1['auth']['name'] not in rna_nucleotides and nt1['auth']['name'] not in dna_nucleotides:
+                    if heteroatom_info is not None:
+                        nt1_info = next(nucleotide for nucleotide in heteroatom_info if nucleotide[4] == nt1['auth']['number'] and nucleotide[1] == nt1['auth']['chain'] and nucleotide[0] == nt1['auth']['name'])
+                    else:
+                        continue
+                else:
+                    nt1_info = next(nucleotide for nucleotide in nucleotide_info if nucleotide[4] == nt1['auth']['number'] and nucleotide[1] == nt1['auth']['chain'] and nucleotide[0] == nt1['auth']['name'])
+            except StopIteration:
+                continue
             
-            if nt2['auth']['name'] not in rna_nucleotides and nt2['auth']['name'] not in dna_nucleotides:
-                if heteroatom_info is not None:
-                    nt2_info = next(nucleotide for nucleotide in heteroatom_info if nucleotide[4] == nt2['auth']['number'] and nucleotide[1] == nt2['auth']['chain'] and nucleotide[0] == nt2['auth']['name'])
-            else:
-                nt2_info = next(nucleotide for nucleotide in nucleotide_info if nucleotide[4] == nt2['auth']['number'] and nucleotide[1] == nt2['auth']['chain'] and nucleotide[0] == nt2['auth']['name'])
+            try:
+                if nt2['auth']['name'] not in rna_nucleotides and nt2['auth']['name'] not in dna_nucleotides:
+                    if heteroatom_info is not None:
+                        nt2_info = next(nucleotide for nucleotide in heteroatom_info if nucleotide[4] == nt2['auth']['number'] and nucleotide[1] == nt2['auth']['chain'] and nucleotide[0] == nt2['auth']['name'])
+                    else:
+                        continue
+                else:
+                    nt2_info = next(nucleotide for nucleotide in nucleotide_info if nucleotide[4] == nt2['auth']['number'] and nucleotide[1] == nt2['auth']['chain'] and nucleotide[0] == nt2['auth']['name'])
+            except StopIteration:
+                continue
 
             nt1_position = nt1_info[2]
             nt2_position = nt2_info[2]
@@ -805,7 +817,7 @@ def create_interaction_lines(interaction_list, nucleotide_info = None, heteroato
                 name = interaction_type,
                 line=dict(color=style['color'], width=style['width'], dash=style['dash']),
             ))
-        return lines
+        return lines if lines else None
     return None
 
 @callback(
@@ -951,7 +963,7 @@ def canonical_style(color, style, figure, relayoutData):
         if figure['data'][i]['name'] == 'c_base_base': 
             fig.data[i].line.color = color
             fig.data[i].line.dash = style
-            fig.data[i].line.width = 6
+            fig.data[i].line.width = 4
             updated = True
     
     if relayoutData and 'scene.camera' in relayoutData:
@@ -982,7 +994,7 @@ def non_canonical_style(color, style, figure, relayoutData):
         if figure['data'][i]['name'] == 'nc_base_base': 
             fig.data[i].line.color = color
             fig.data[i].line.dash = style
-            fig.data[i].line.width = 6
+            fig.data[i].line.width = 4
             updated = True
     
     if relayoutData and 'scene.camera' in relayoutData:

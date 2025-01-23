@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "rnagraph"
+version = "0.1.0"
+description = "app for interactions visualization"
+authors = ["Anna Pustelnyk <anna.pustelnyk@student.put.poznan.pl>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+dash = "^2.18.2"
+dash-html-components = "^2.0.0"
+dash-bootstrap-components = "^1.6.0"
+future = "^1.0.0"
+six = "^1.17.0"
+requests = "^2.32.3"
+msgpack = "^1.1.0"
+tox = "^4.23.2"
+coverage = "^7.6.9"
+cachecontrol = "^0.14.1"
+mmcif = "^0.90.0"
+rnapolis = "^0.4.14"
+waitress = "^3.0.2"
+biopython = "^1.84"
+dash-daq = "^0.5.0"
+psutil = "^6.1.0"
+multiprocess = "^0.70.17"
+selenium = "^4.27.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-dash = "^2.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

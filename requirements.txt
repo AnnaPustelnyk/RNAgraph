@@ -1,0 +1,15 @@
+dash
+dash-html-components
+dash-bootstrap-components
+dash-daq
+future
+six
+requests
+msgpack
+tox
+coverage
+cachecontrol
+mmcif
+rnapolis
+waitress
+biopython
