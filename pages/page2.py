@@ -37,7 +37,6 @@ except dash.exceptions.PageError:
 
 layout = html.Div( 
     [
-        # sel-nucleotide-info container
         html.Div(
             id='sel-nucleotide-info',
             className='sel-nucleotide-info',
@@ -95,7 +94,6 @@ layout = html.Div(
                 html.Button('Clear', id='clear-button', className='clear-button'), 
             ], 
         ),
-        # Main container with the graph
         html.Div(
             [
                 dcc.Loading(

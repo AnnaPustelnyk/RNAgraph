@@ -4,7 +4,6 @@ import base64
 
 dash.register_page(__name__, path='/', name="Mol* Viewer")
 
-# Layout of the page
 layout = html.Div(
     [
         html.Div(id='molstar-viewer-container'),

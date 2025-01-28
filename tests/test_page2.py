@@ -15,9 +15,8 @@ class TestPage(unittest.TestCase):
 
     @patch('pages.page2.PDBParser')
     @patch('pages.page2.MMCIFParser')
-    @patch('pages.page2.colors', new=['red'])  # Mock the colors list to avoid dependency issues
+    @patch('pages.page2.colors', new=['red']) 
     def test_update_rna_graph(self, mock_mmcif_parser, mock_pdb_parser):
-        # Simulated PDB content (minimal valid structure)
         mock_pdb_content = """
     ATOM      1  P     G A   1      11.104  13.207   2.814  1.00 20.00           P
     ATOM      2  O1P   G A   1      10.293  12.151   2.153  1.00 20.00           O
@@ -32,16 +31,15 @@ class TestPage(unittest.TestCase):
         }
         mock_filename = 'test.pdb'
 
-        # Mock parser return value
         mock_structure = MagicMock()
         mock_model = MagicMock()
         mock_chain = MagicMock()
         mock_residue = MagicMock()
 
         mock_atom = MagicMock()
-        mock_atom.get_coord.return_value = [11.0, 13.2, 2.8]  # Simulate an atom's coordinates
+        mock_atom.get_coord.return_value = [11.0, 13.2, 2.8] 
 
-        mock_residue.resname = 'G'  # A valid nucleotide
+        mock_residue.resname = 'G' 
         mock_residue.__iter__.return_value = [mock_atom]
         mock_residue.id = (' ', 1, ' ')
 
@@ -53,22 +51,18 @@ class TestPage(unittest.TestCase):
 
         mock_pdb_parser.return_value.get_structure.return_value = mock_structure
 
-        # Call the function
         figure, rna_graph_style, side_bar_style, nucleotide_info_style, options = update_rna_graph(mock_data, mock_filename)
 
-        # Assertions
         self.assertEqual(rna_graph_style, {'display': 'block'})
         self.assertEqual(side_bar_style, {'display': 'block'})
         self.assertEqual(nucleotide_info_style, {'display': 'block'})
 
-        # Validate figure content
-        self.assertEqual(len(figure.data), 1)  # One trace for nucleotides
+        self.assertEqual(len(figure.data), 1)  
         nucleotide_trace = figure.data[0]
         self.assertEqual(nucleotide_trace.name, 'nucleotides')
-        self.assertEqual(nucleotide_trace.marker.color, ('rgb(228, 34, 23)',))  # Mocked color list
+        self.assertEqual(nucleotide_trace.marker.color, ('rgb(228, 34, 23)',))  
         self.assertEqual(nucleotide_trace.mode, 'markers')
 
-        # Validate heteroatom options
         self.assertEqual(options, [{'label': 'Show heteroatoms', 'value': 'heteroatoms', 'disabled': True}])
 
 
@@ -87,26 +81,23 @@ class TestPage(unittest.TestCase):
         self.assertIsInstance(updated_figure, go.Figure)
 
     def test_clear_selection(self):
-        # Create a mock current figure
         current_figure = go.Figure(data=[
             go.Scatter3d(marker=dict(color=['red'], size=[5])),
             go.Scatter3d(name='heteroatoms', marker=dict(color=['black'], size=[5]))
         ])
-        n_clicks = 1  # Simulate the button being clicked
-        relayoutData = None  # No relayout data for this test
+        n_clicks = 1 
+        relayoutData = None 
 
-        # Call the clear_selection function
         updated_figure, nucleotide_input, chain_input, coord_x, coord_y, coord_z, coordinates_style, toggle_button = clear_selection(n_clicks, current_figure, relayoutData)
 
-        # Assertions
-        self.assertTrue(updated_figure)  # Check if the color is set to 'red'
-        self.assertEqual(nucleotide_input, "")  # Check if nucleotide input is reset
-        self.assertEqual(chain_input, "")  # Check if chain input is reset
-        self.assertEqual(coord_x, "x: ")  # Check if coord_x is reset
-        self.assertEqual(coord_y, "y: ")  # Check if coord_y is reset
-        self.assertEqual(coord_z, "z: ")  # Check if coord_z is reset
-        self.assertEqual(coordinates_style, {'display': 'none'})  # Check if coordinates container is hidden
-        self.assertEqual(toggle_button, '▼')  # Check if toggle button is set correctly
+        self.assertTrue(updated_figure) 
+        self.assertEqual(nucleotide_input, "")  
+        self.assertEqual(chain_input, "")  
+        self.assertEqual(coord_x, "x: ")  
+        self.assertEqual(coord_y, "y: ")  
+        self.assertEqual(coord_z, "z: ")  
+        self.assertEqual(coordinates_style, {'display': 'none'})  
+        self.assertEqual(toggle_button, '▼')  
 
     def test_show_heteroatoms(self):
         current_figure = go.Figure(data=[
@@ -170,11 +161,9 @@ class TestIntegration(unittest.TestCase):
 
         updated_figure, interaction_options = update_interaction_info(selected_interactions, data, current_figure, interactions, None)
 
-        # Assertions
-        self.assertIsNotNone(updated_figure)  # Check that the updated figure is not None
-        self.assertIsInstance(interaction_options, list)  # Check that interaction_options is a list
+        self.assertIsNotNone(updated_figure) 
+        self.assertIsInstance(interaction_options, list)  
 
-        # Check that the interaction options are generated correctly
         self.assertIn({'label': 'Phosphodiester interactions', 'value': 'phosphodiester', 'disabled': False}, interaction_options)
         self.assertIn({'label': 'Canonical interactions', 'value': 'c_base_base', 'disabled': True}, interaction_options)
         self.assertIn({'label': 'Non-canonical interactions', 'value': 'nc_base_base', 'disabled': True}, interaction_options)
@@ -198,13 +187,13 @@ class TestPerformance(unittest.TestCase):
         with open(pdb_file_path, 'r') as pdb_file:
             example_pdb_content = pdb_file.read()
         
-        pdb_data = example_pdb_content.encode('utf-8')  # Convert string to bytes
+        pdb_data = example_pdb_content.encode('utf-8')  
         pdb_data_file = base64.b64encode(pdb_data).decode()
 
         mock_filename = 'sample.pdb'
         mock_data = {
             'url': f'data:data:application/octet-stream;base64;base64,{pdb_data_file}',
-            'ext': 'pdb'  # Include the file extension
+            'ext': 'pdb' 
         }
 
         start_time = time.time()
@@ -227,7 +216,7 @@ class TestPerformance(unittest.TestCase):
         display_selected_info(click_data, current_figure, None)
         end_time = time.time()
 
-        self.assertLess(end_time - start_time, 0.5)  # Assert under 0.5s
+        self.assertLess(end_time - start_time, 0.5) 
 
     def test_memory_update_rna_graph(self):
         mock_pdb_content = """
@@ -245,7 +234,7 @@ class TestPerformance(unittest.TestCase):
         current, peak = tracemalloc.get_traced_memory()
         tracemalloc.stop()
 
-        self.assertLess(peak, 10 * 1024 * 1024)  # Assert peak memory < 10MB
+        self.assertLess(peak, 10 * 1024 * 1024)  
 
     @patch('pages.page2.PDBParser')
     def test_large_pdb_file(self, mock_pdb_parser):
@@ -261,16 +250,15 @@ class TestPerformance(unittest.TestCase):
         }
         mock_filename = 'test.pdb'
 
-        # Mock parser return value
         mock_structure = MagicMock()
         mock_model = MagicMock()
         mock_chain = MagicMock()
         mock_residue = MagicMock()
 
         mock_atom = MagicMock()
-        mock_atom.get_coord.return_value = [11.0, 13.2, 2.8]  # Simulate an atom's coordinates
+        mock_atom.get_coord.return_value = [11.0, 13.2, 2.8] 
 
-        mock_residue.resname = 'G'  # A valid nucleotide
+        mock_residue.resname = 'G'  
         mock_residue.__iter__.return_value = [mock_atom]
         mock_residue.id = (' ', 1, ' ')
 
@@ -289,8 +277,8 @@ class TestPerformance(unittest.TestCase):
 
         print(f"Czas ładowania pliku large_file.pdb: {render:.2f} sekund")
 
-        self.assertLess(end_time - start_time, 3)  # Ensure runtime < 3s
-        self.assertEqual(len(figure.data), 1)  # Ensure single trace for nucleotides
+        self.assertLess(end_time - start_time, 3)  
+        self.assertEqual(len(figure.data), 1) 
 
 class TestPerformance1(unittest.TestCase):
     def test_performance_update_rna_graph(self):
@@ -298,20 +286,19 @@ class TestPerformance1(unittest.TestCase):
         with open(pdb_file_path, 'r') as pdb_file:
             example_pdb_content = pdb_file.read()
 
-        # Prepare mock data
-        pdb_data = example_pdb_content.encode('utf-8')  # Convert string to bytes
+        pdb_data = example_pdb_content.encode('utf-8') 
         pdb_data_file = base64.b64encode(pdb_data).decode()
         mock_filename = 'sample.pdb'
         mock_data = {
             'url': f'data:application/octet-stream;base64,{pdb_data_file}',
-            'ext': 'pdb'  # Include the file extension
+            'ext': 'pdb' 
         }
 
         execution_times = []
         memory_usages = []
 
-        for _ in range(10):  # Run multiple iterations to collect data
-            tracemalloc.start()  # Start tracking memory usage
+        for _ in range(10):
+            tracemalloc.start()
             start_time = time.time()
             update_rna_graph(mock_data, mock_filename)
             end_time = time.time()
@@ -319,13 +306,11 @@ class TestPerformance1(unittest.TestCase):
             tracemalloc.stop()
 
             execution_times.append(end_time - start_time)
-            memory_usages.append(peak_memory / 1024)  # Convert to KB
+            memory_usages.append(peak_memory / 1024)  
 
-        # Save data for graphing
         np.savetxt("update_rna_graph_times.csv", execution_times, delimiter=",", header="Execution Time (s)")
         np.savetxt("update_rna_graph_memory.csv", memory_usages, delimiter=",", header="Memory Usage (KB)")
 
-        # Assertions to ensure performance is reasonable
         self.assertLess(max(execution_times), 1, "Execution time exceeded 1 second")
         self.assertLess(max(memory_usages), 1024, "Memory usage exceeded 1 MB")
 
@@ -341,17 +326,15 @@ class TestPerformance1(unittest.TestCase):
 
         execution_times = []
 
-        for _ in range(10):  # Run multiple iterations to collect data
+        for _ in range(10):  
             start_time = time.time()
             display_selected_info(click_data, current_figure, None)
             end_time = time.time()
 
             execution_times.append(end_time - start_time)
 
-        # Save data for graphing
         np.savetxt("display_selected_info_times.csv", execution_times, delimiter=",", header="Execution Time (s)")
 
-        # Assertions to ensure performance is reasonable
         self.assertLess(max(execution_times), 0.5, "Execution time exceeded 0.5 seconds")
 
     def test_performance_memory_usage(self):
@@ -361,24 +344,22 @@ class TestPerformance1(unittest.TestCase):
         with open(pdb_file_path, 'r') as pdb_file:
             example_pdb_content = pdb_file.read()
 
-        pdb_data = example_pdb_content.encode('utf-8')  # Convert string to bytes
+        pdb_data = example_pdb_content.encode('utf-8') 
         pdb_data_file = base64.b64encode(pdb_data).decode()
         mock_filename = 'sample.pdb'
         mock_data = {
             'url': f'data:application/octet-stream;base64,{pdb_data_file}',
-            'ext': 'pdb'  # Include the file extension
+            'ext': 'pdb' 
         }
 
         update_rna_graph(mock_data, mock_filename)
         current_memory, peak_memory = tracemalloc.get_traced_memory()
         tracemalloc.stop()
 
-        # Save peak memory usage for graphing
         with open("memory_usage.csv", "w") as f:
             f.write("Peak Memory Usage (KB)\n")
-            f.write(f"{peak_memory / 1024}\n")  # Convert bytes to KB
+            f.write(f"{peak_memory / 1024}\n")  
 
-        # Assert memory usage does not exceed a threshold
         self.assertLess(peak_memory / 1024, 1500, "Memory usage exceeded 1.5 MB")
 
 
